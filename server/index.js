@@ -7,6 +7,11 @@ require('dotenv').config();
 const app = express();
 app.use(bodyParser.json());
 
+const path = require('path')
+app.get('*', (req, res)=>{
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+})
+
 massive(process.env.CONNECTION_STRING)
 .then(db => {
     app.set('db', db)
