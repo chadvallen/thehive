@@ -1,13 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300|Staatliches');
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+body{
+    background: rgb(245, 245, 245);
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 30px auto;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
 // HEADER STYLES
+.padding-top {
+    padding-top: 180px;
+}
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
-    height: 50px;
-    background: rgb(255, 250, 238);
-    nav {
-        width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(34, 34, 34);
+    // box-shadow: 5px 5px 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(240, 240, 240);
+    transition: 0.6s;
+    min-height: 140px;
+    margin: 0 auto;
+    h2 {
+        font-size: 80px;
+        margin: 20px auto 30px auto;
+        font-family: 'Major Mono Display', monospace;
+        font-weight: 100;
+        color: rgb(205, 205, 205);
+    }
+    #nav-items {
+        width: 70%;
         display: flex;
         justify-content: space-around;
+        align-items: center;
+        p {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(142, 142, 142);
+        }
     }
+}
+
+// HOME STYLES
+
+.home-container {
+    padding-top: 200px ;
+    img {
+        width: 100%;
+    }
+}
+
+// ABOUT STYLES
+
+.about-content {
+    // width: 70%;
+    // margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    p {
+        display: flex;
+        align-items: center;
+        max-width: 400px;
+    }
+    img {
+        margin-left: 20px;
+        max-height: 400px;
+    }
+}
+
+// LOCATION STYLES
+.map {
+    width: 100%;
 }
